@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Heading1 from "../components/Heading1.astro";
+import MainContent from "../components/MainContent.astro";
+import Layout from "../layouts/Layout.astro";
+import PostList from "../components/PostList.astro";
+const posts = await getCollection("posts")
+//console.log(posts)
+//console.log(posts[1].slug)
+---
+
+<Layout title="Blog | Ashi">
+	<MainContent>
+    <Heading1 text='Blog Page'/>
+    {posts.map(p=>(
+        <PostList posts={posts}/>
+    ))}
+  </MainContent>
+</Layout>
