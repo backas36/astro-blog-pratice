@@ -1,12 +1,12 @@
 import mdx from "@astrojs/mdx";
 import tailwind from "@astrojs/tailwind";
 
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig, squooshImageService } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), mdx()],
   image: {
-    service: passthroughImageService(),
+    service: squooshImageService(),
   },
 });
