@@ -1,5 +1,5 @@
 import { _ as __astro_tag_component__, F as Fragment, v as createVNode } from './astro_dSwLPcKD.mjs';
-import { $ as $$Image } from './pages/_slug__76MzjCab.mjs';
+import { $ as $$Image } from './pages/_slug__U-XInE9T.mjs';
 
 const frontmatter = {
   "author": "dwight-schrute",

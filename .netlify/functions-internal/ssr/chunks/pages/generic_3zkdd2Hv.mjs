@@ -1,5 +1,5 @@
 import { c as isRemotePath, d as isRemoteAllowed } from '../astro/assets-service_QXU7h1F8.mjs';
-import { d as getConfiguredImageService, i as imageConfig } from './_slug__76MzjCab.mjs';
+import { d as getConfiguredImageService, i as imageConfig } from './_slug__U-XInE9T.mjs';
 
 function getDefaultExportFromCjs (x) {
 	return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, 'default') ? x['default'] : x;

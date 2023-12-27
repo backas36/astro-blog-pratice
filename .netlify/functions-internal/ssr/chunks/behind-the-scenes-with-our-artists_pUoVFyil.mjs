@@ -1,5 +1,5 @@
 async function getMod() {
-						return import('./behind-the-scenes-with-our-artists_f8EdMaN5.mjs');
+						return import('./behind-the-scenes-with-our-artists_9Gkf9o70.mjs');
 					}
 					const collectedLinks = [];
 					const collectedStyles = [];
