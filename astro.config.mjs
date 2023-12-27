@@ -10,6 +10,6 @@ export default defineConfig({
   //image: {
   //  service: squooshImageService()
   //},
-  output: "hybrid",
+  output: "server",
   adapter: netlify(),
 });

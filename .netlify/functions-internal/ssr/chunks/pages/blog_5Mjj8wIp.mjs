@@ -1,6 +1,6 @@
 /* empty css                         */
 import { e as createAstro, f as createComponent, r as renderTemplate, m as maybeRenderHead, h as addAttribute, i as renderComponent } from '../astro_dSwLPcKD.mjs';
-import { $ as $$Image, g as getCollection, a as $$MainContent, b as $$Heading1, c as $$Layout } from './_slug__U-XInE9T.mjs';
+import { $ as $$Image, g as getCollection, a as $$MainContent, b as $$Heading1, c as $$Layout } from './_slug__n2KqeWwU.mjs';
 
 const $$Astro$2 = createAstro();
 const $$Post = createComponent(async ($$result, $$props, $$slots) => {
