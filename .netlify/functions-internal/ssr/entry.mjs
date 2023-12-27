@@ -1,11 +1,11 @@
 import * as adapter from '@astrojs/netlify/ssr-function.js';
 import { renderers } from './renderers.mjs';
-import { manifest } from './manifest_QBRGGE5q.mjs';
+import { manifest } from './manifest_43vsRb1Q.mjs';
 
-const _page0  = () => import('./chunks/generic_2oHM9xbN.mjs');
-const _page1  = () => import('./chunks/index_-W5TZk9b.mjs');
-const _page2  = () => import('./chunks/_slug__1PSCFLFV.mjs');
-const _page3  = () => import('./chunks/blog_0QXGp6SW.mjs');
+const _page0  = () => import('./chunks/generic_c8NicbI-.mjs');
+const _page1  = () => import('./chunks/index_lZY-CRPm.mjs');
+const _page2  = () => import('./chunks/_slug__icWz6Xxm.mjs');
+const _page3  = () => import('./chunks/blog_tnSm5tIQ.mjs');
 const _page4  = () => import('./chunks/test_9s94PXJE.mjs');const pageMap = new Map([["node_modules/.pnpm/astro@4.0.7_typescript@5.3.3/node_modules/astro/dist/assets/endpoint/generic.js", _page0],["src/pages/index.astro", _page1],["src/pages/blog/[slug].astro", _page2],["src/pages/blog.astro", _page3],["src/pages/api/test.ts", _page4]]);
 const _manifest = Object.assign(manifest, {
 	pageMap,
