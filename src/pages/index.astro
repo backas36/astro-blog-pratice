@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Heading1 from '../components/Heading1.astro';
 import MainContent from '../components/MainContent.astro';
+import TempWrapper from '../components/TempWrapper.astro';
 
 export const prerender = true
 ---
@@ -10,5 +11,9 @@ export const prerender = true
 <Layout title="Welcome to Ashi Blog">
 	<MainContent>
     <Heading1 text='Ashi Yang'/>
+    <TempWrapper>
+      <p slot="second-slot" class="border-2 border-sky-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione magnam sapiente illum id omnis quasi inventore ex dignissimos, quaerat expedita!</p>
+      <p slot="nested">Nested slot</p>
+    </TempWrapper>
   </MainContent>
 </Layout>

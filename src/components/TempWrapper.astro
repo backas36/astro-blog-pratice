@@ -1,0 +1,19 @@
+---
+import TempNestedWrapper from "./TempNestedWrapper.astro";
+
+---
+
+<div class="border-2 border-red-400">
+  <slot>
+    This is place holder for no name slot
+  </slot>
+  
+  <br/>
+
+  <slot name="second-slot"/>
+  <br/>
+  <TempNestedWrapper>
+    <slot name="nested" slot="nested">
+    </slot>
+  </TempNestedWrapper>
+</div>
