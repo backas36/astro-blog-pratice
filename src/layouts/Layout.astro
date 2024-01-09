@@ -1,31 +1,33 @@
 ---
-import Header from "../components/Header.astro"
-import {ViewTransitions} from "astro:transitions"
+import Header from "../components/Header.astro";
+import { ViewTransitions } from "astro:transitions";
 interface Props {
-	title: string;
-  description?: string;
-  image?:string;
+    title: string;
+    description?: string;
+    image?: string;
 }
 
-const { title,description ,image ="/images/band.jpg"} = Astro.props;
+const { title, description, image = "/images/band.jpg" } = Astro.props;
 
-const metaDesc = description?  description: `Explore the world of Ashi Yang, a front-end engineer embarking on a blogging journey. Discover a fusion of technical insights gained in the coding realm, along with captivating tales of mountain adventures, travel escapades, and thrilling underwater experiences like scuba diving. Join me on a virtual expedition through the realms of technology and exploration. 🚀🏔️🌏 #FrontEnd #TechBlogger #AdventureSeeker` 
+const metaDesc = description
+    ? description
+    : `Explore the world of Ashi Yang, a front-end engineer embarking on a blogging journey. Discover a fusion of technical insights gained in the coding realm, along with captivating tales of mountain adventures, travel escapades, and thrilling underwater experiences like scuba diving. Join me on a virtual expedition through the realms of technology and exploration. 🚀🏔️🌏 #FrontEnd #TechBlogger #AdventureSeeker`;
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content={metaDesc} />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-    <meta property="og:image" content={image}/>
-    <ViewTransitions/>
-		<title>{title}</title>
-	</head>
-	<body class="min-h-screen">
-    <Header/>
-		<slot />
-	</body>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='description' content={metaDesc} />
+        <meta name='viewport' content='width=device-width' />
+        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+        <meta name='generator' content={Astro.generator} />
+        <meta property='og:image' content={image} />
+        <ViewTransitions />
+        <title>{title}</title>
+    </head>
+    <body class='min-h-screen'>
+        <Header />
+        <slot />
+    </body>
 </html>
