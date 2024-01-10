@@ -1,13 +1,19 @@
 import mdx from "@astrojs/mdx";
 import netlify from "@astrojs/netlify";
-import tailwind from "@astrojs/tailwind";
-import { defineConfig, squooshImageService } from "astro/config";
-
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
+
+import { defineConfig, squooshImageService } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [tailwind(), mdx(), sitemap()],
+    integrations: [
+        tailwind({
+            nesting: true,
+        }),
+        mdx(),
+        sitemap(),
+    ],
     //image: {
     //  service: squooshImageService()
     //},
