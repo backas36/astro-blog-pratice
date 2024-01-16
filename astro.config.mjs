@@ -3,6 +3,7 @@ import netlify from "@astrojs/netlify";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
 
+import icon from "astro-icon";
 import { defineConfig, squooshImageService } from "astro/config";
 
 // https://astro.build/config
@@ -12,6 +13,7 @@ export default defineConfig({
             nesting: true,
         }),
         mdx(),
+        icon(),
         sitemap(),
     ],
     //image: {
